@@ -1,11 +1,11 @@
 package main
 
 import (
+	"godemo/search"
 	"log"
 	"os"
 
 	_ "godemo/matchers"
-	"godemo/search"
 )
 
 // init is called prior to main.
@@ -18,4 +18,5 @@ func init() {
 func main() {
 	// Perform the search for the specified term.
 	search.Run("president")
+	//search.Run("hello")
 }
