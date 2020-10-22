@@ -16,7 +16,11 @@ func init() {
 
 // main is the entry point for the program.
 func main() {
+	var searchTerm = "president"
+	if len(os.Args) > 1 {
+		searchTerm = os.Args[1]
+	}
 	// Perform the search for the specified term.
-	search.Run("president")
+	search.Run(searchTerm)
 	//search.Run("hello")
 }
